@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "cspm-exec",
+      "name": "CSPM Executive Dashboard",
+      "visible": true,
+      "widgets": [
+        { "id": "w_1", "name": "Summary", "text": "Top-level summary metrics across accounts" },
+        { "id": "w_2", "name": "Alerts Overview", "text": "Critical: 12, High: 45, Medium: 100" },
+        { "id": "w_3", "name": "Compliance Status", "text": "PCI-DSS: 89%, HIPAA: 72%" },
+        { "id": "w_4", "name": "Cloud Spend", "text": "$12,340 this month" },
+        { "id": "w_5", "name": "Top 5 Risks", "text": "IAM Misconfigurations, Public Buckets..." }
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud Overview",
+      "visible": true,
+      "widgets": [
+        { "id": "w_6", "name": "Inventory", "text": "Total resources: 1,243" },
+        { "id": "w_7", "name": "EC2 Instances", "text": "Running: 230, Stopped: 50" },
+        { "id": "w_8", "name": "S3 Buckets", "text": "Public: 12, Private: 388" },
+        { "id": "w_9", "name": "Kubernetes Clusters", "text": "Total: 18 clusters" },
+        { "id": "w_10", "name": "Networking", "text": "VPCs: 32, Subnets: 145, Gateways: 20" }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security Monitoring",
+      "visible": true,
+      "widgets": [
+        { "id": "w_11", "name": "Failed Logins", "text": "Last 24h: 345 attempts" },
+        { "id": "w_12", "name": "Suspicious IPs", "text": "Detected: 7 new IPs" },
+        { "id": "w_13", "name": "Firewall Events", "text": "Blocked: 12,432 requests" },
+        { "id": "w_14", "name": "Malware Alerts", "text": "Detected: 4 hosts infected" },
+        { "id": "w_15", "name": "Data Exfiltration", "text": "None detected" }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps Metrics",
+      "visible": true,
+      "widgets": [
+        { "id": "w_16", "name": "Build Pipeline", "text": "Success Rate: 97%" },
+        { "id": "w_17", "name": "Deployments", "text": "Today: 25 deployments" },
+        { "id": "w_18", "name": "Incidents", "text": "Open: 3, Resolved: 19" },
+        { "id": "w_19", "name": "CI/CD Runtime", "text": "Avg: 12m 45s" },
+        { "id": "w_20", "name": "Rollback Count", "text": "Last 7 days: 2 rollbacks" }
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "User Analytics",
+      "visible": true,
+      "widgets": [
+        { "id": "w_21", "name": "Active Users", "text": "Today: 12,000 users" },
+        { "id": "w_22", "name": "Page Views", "text": "Total: 340,000" },
+        { "id": "w_23", "name": "Conversion Rate", "text": "5.7%" },
+        { "id": "w_24", "name": "Bounce Rate", "text": "42%" },
+        { "id": "w_25", "name": "Average Session Time", "text": "4m 32s" }
+      ]
+    }
+  ]
+}
