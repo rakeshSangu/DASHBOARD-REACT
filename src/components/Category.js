@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useDashboard } from "../DashboardContext";
 import Widget from "./Widget";
 import AddWidgetModal from "./AddWidgetModal";

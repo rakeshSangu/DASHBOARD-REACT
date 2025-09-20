@@ -11,7 +11,7 @@ export default function AddWidgetModal({ categoryId, onClose }) {
   const [text, setText] = useState("");
 
   function handleAdd() {
-    if (!name.trim()) return alert("Widget name required!");
+    if (!name.trim() && !name.trim()) return alert("Widget name required!");
     addWidget(categoryId, { id: makeId(), name, text });
     onClose();
   }

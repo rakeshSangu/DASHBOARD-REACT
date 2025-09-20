@@ -52,8 +52,19 @@ export function DashboardProvider({ children }) {
     );
   };
 
+  const saveEditedWidget = (categoryId, widgetId, newData) => {
+     const newCategories = categories.map(cat => {
+        if(cat.id ===  categoryId){
+          return ({...cat, widgets: cat.widgets.map(wid => wid.id == widgetId ? {...wid, text: newData} : wid )})
+        }
+        return cat
+     })
+     console.log(newCategories)
+     setCategories(newCategories)
+  }
+
   return (
-    <DashboardContext.Provider value={{ categories, addWidget, removeWidget, toggleCategory }}>
+    <DashboardContext.Provider value={{ categories, addWidget, removeWidget, toggleCategory, saveEditedWidget }}>
       {children}
     </DashboardContext.Provider>
   );
